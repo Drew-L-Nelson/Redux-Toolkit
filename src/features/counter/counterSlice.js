@@ -1,3 +1,5 @@
+// PART OF THE COUNTER FEATURE FOR CHAPTER ONE FROM https://www.youtube.com/watch?v=NqzdVN2tyvQ
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
