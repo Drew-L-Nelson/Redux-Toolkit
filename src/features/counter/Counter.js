@@ -1,3 +1,5 @@
+// PART OF THE COUNTER FEATURE FOR CHAPTER ONE FROM https://www.youtube.com/watch?v=NqzdVN2tyvQ
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {  increment, decrement, reset, incrementByAmount } from './counterSlice';
