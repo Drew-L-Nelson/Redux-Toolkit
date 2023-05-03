@@ -8,7 +8,7 @@ const initialState = [
     content: "I've heard good things.",
     date: sub(new Date(), { minutes: 10 }).toISOString(),
     reactions: {
-      thumbsup: 0,
+      thumbsUp: 0,
       wow: 0,
       heart: 0,
       rocket: 0,
@@ -21,7 +21,7 @@ const initialState = [
     content: 'The more I say slice, the more I want pizza.',
     date: sub(new Date(), { minutes: 5 }).toISOString(),
     reactions: {
-      thumbsup: 0,
+      thumbsUp: 0,
       wow: 0,
       heart: 0,
       rocket: 0,
@@ -47,7 +47,7 @@ const postsSlice = createSlice({
             date: new Date().toISOString(),
             userId,
             reactions: {
-              thumbsup: 0,
+              thumbsUp: 0,
               wow: 0,
               heart: 0,
               rocket: 0,
@@ -61,9 +61,9 @@ const postsSlice = createSlice({
       const { postId, reaction } = action.payload
       const existingPost = state.find(post => post.id === postId)
       if (existingPost) {
-        existingPost.reactions[reaction]++
+          existingPost.reactions[reaction]++
       }
-    }
+  }
   },
 });
 
