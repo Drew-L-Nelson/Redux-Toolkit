@@ -84,9 +84,12 @@ const postsSlice = createSlice({
             };
           return post;
         });
+        
+        //filter added by ChatGPT
+        const newPosts = loadedPosts.filter(post => !state.posts.some(existingPost => existingPost.id === post.id));
 
         // Add any fetched posts to the array
-        state.posts = state.posts.concat(loadedPosts);
+        state.posts = state.posts.concat(newPosts);
       })
       .addCase(fetchPosts.rejected, (state, action) => {
         state.status = 'failed';
