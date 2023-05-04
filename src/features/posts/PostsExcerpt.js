@@ -8,7 +8,7 @@ const PostsExcerpt = ({ post }) => {
     <article>
       <h3>{post.title}</h3>
       <p>{post.body.substring(0, 100)}</p>
-      <p className='PostCredit'>
+      <p className='postCredit'>
         <PostAuthor userId={post.userId} />
         <TimeAgo timestamp={post.date} />
       </p>
