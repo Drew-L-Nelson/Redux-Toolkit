@@ -31,3 +31,5 @@ const SinglePostPage = () => {
     </article>
   )
 }
+
+export default SinglePostPage;
